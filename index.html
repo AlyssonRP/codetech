@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CODE TECH</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+  <a href="https://github.com/seu-usuario" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#06ffe1;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888; z-index:1000;" target="_blank">
+    <i style="margin-top:16px" class="fa fa-github"></i>
+  </a>
+
+  <!-- navbar responsiva fixa !-->
+
+  <nav class="navbar bg-dark border-bottom border-body" position-fixed data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="/Img/codetech.jpg" alt="" width="55" height="55">
+        </a>
+        <a class="navbar-brand" href="#">CODE TECH</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CODE TECH</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Estruturas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="array.html">ARRAYS</a></li>
+                  <li><a class="dropdown-item" href="listas.html">LISTAS</a></li>
+                  <li><a class="dropdown-item" href="pilhas.html">PILHAS</a></li>
+                  <li><a class="dropdown-item" href="filas.html">FILAS</a></li>
+                  <li><a class="dropdown-item" href="#">ÁRVORES</a></li>
+                  <li><a class="dropdown-item" href="#">HEAPS</a></li>
+                  <li><a class="dropdown-item" href="#">GRAFOS</a></li>
+                  <li><a class="dropdown-item" href="#">HASH TABLE</a></li>
+
+                </ul>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </nav>
+  </nav>
+          
+
+
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="Img/fundo.png" class="d-block w-100" alt="..." width="400" height="590">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="Img/Imagem do WhatsApp de 2023-12-06 11.26.01_e6185aed.jpg" alt="" width="280" height="180">
+            <h5 class="card-title">Manutenibilidade do Código:</h5>
+            <p class="card-text">A programação estruturada promove a divisão lógica do código em blocos ou funções, facilitando a leitura e manutenção do programa. Isso torna mais simples identificar e corrigir erros, além de facilitar a incorporação de novos recursos ou a atualização do software.</p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <img src="Img/Imagem do WhatsApp de 2023-12-06 11.26.04_14fbb2b9.jpg" alt="" width="280" height="180">
+              <h5 class="card-title">Eficiência na Execução:</h5>
+              <p class="card-text">Estruturas de dados eficientes são essenciais para otimizar o desempenho de algoritmos e operações. Ao escolher e implementar corretamente estruturas de dados, é possível reduzir o tempo de execução de operações críticas, melhorando assim a eficiência geral do programa.</p>
+            </div>
+          </div>
+      </div>
+  
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="Img/Imagem do WhatsApp de 2023-12-06 11.26.04_19f33d20.jpg" alt=""width="280" height="180">
+            <h5 class="card-title">Desempenho a Longo Prazo:</h5>
+            <p class="card-text">Ao projetar programas com programação estruturada e implementando estruturas de dados eficientes, você está investindo na escalabilidade do seu sistema. Isso significa que o software pode lidar com volumes crescentes de dados e operações sem comprometer o desempenho.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!--vai começar a ter os links-->
+  <div class="container text-c my-4">
+    <div class="container text-c">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/matriz-2009.bmp" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Vetores</h5>
+            <a href="array.html"><button class="button3">CLIQUE AQUI</button></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-bg text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/c_lista1.jpg" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Listas</h5>
+              <a href="listas.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>
+            </div>
+          </div>
+        </div>
+    
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/lifo_stack.png" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Pilhas</h5>
+              <a href="pilhas.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>          
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/images.png" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Filas</h5>
+              <a href="filas.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;" >
+            <img src="Img/arvorebinaria-1.png" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Árvores</h5>
+              <a href="arvores.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/HeapArvoreArranjo.png" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Heaps</h5>
+              <a href="heaps.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>          
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-bg-info mb-3" style="max-width: 30rem;">
+            <img src="Img/grafos.gif" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Grafos</h5>
+              <a href="grafos.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-bg-info" style="max-width: 30rem;">
+            <img src="Img/g983.jpg" alt="" width="350" height="200">
+            <div class="card-body">
+              <h5 class="card-title">Hash Table</h5>
+              <a href="hashtable.html" target="_blank"> <input type="button" value="CLIQUE AQUI"></a>          
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-bg-info" style="max-width: 30rem;" >
+            <img src="" alt="" width="" height="">
+            <div class="card-header">CodeTech</div>
+            <div class="card-body">
+              <h5 class="card-title">Para seu Aprendizado</h5>
+              <p class="card-text">Você irá manipular todas essas estruturas de dados de uma forma dinâmica, divertida e de fácil compreensão. Aproveite bem nosso Site. Muito Obrigado pela sua visita... Org-CODETECH.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="overlay-text">
+          <h3>Code Tech: Sua Jornada para a Excelência em Programação Estruturada e Estrutura de Dados</h3>
+          <p>Seja bem-vindo ao Code Tech, o seu destino online exclusivo para aprimorar suas habilidades em programação estruturada e estrutura de dados. Em nossa plataforma educacional e interativa, nos dedicamos a capacitar programadores em todas as fases de sua jornada, desde os primeiros passos até desenvolvedores experientes. Aqui, você encontrará recursos robustos e fará parte de uma comunidade vibrante.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="img/green.jpg" alt="" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3">
+        <footer class="fotos">
+          <a href="">
+            <img src="Img/joao.jpg" alt="" class="img-fluid rounded" width="100" height="100"> 
+            <p class="fimfim">João Lucas</p> 
+          </a>
+        </footer>
+      </div>
+
+      <div class="col-md-3">
+        <footer class="fotos">
+          <a href="">
+            <img src="Img/joao.jpg" alt="" class="img-fluid rounded" width="100" height="100"> 
+            <p class="fimfim">Alysson Rabelo</p> 
+          </a>
+        </footer>
+      </div>
+  
+      <div class="col-md-3">
+        <footer class="fotos">
+          <a href="https://www.instagram.com/wesney_paiva/">
+            <img src="Img/wesney.jpg" alt="" class="img-fluid rounded" width="100" height="100"> 
+            <p class="fimfim">Wesney Paiva</p> 
+          </a>
+        </footer>
+      </div>
+  
+      <div class="col-md-3">
+        <footer class="fotos">
+          <a href="https://www.instagram.com/micheljunior631/">
+            <img src="Img/1702166959600.jpg" alt="" class="img-fluid rounded" width="100" height="100"> 
+            <p class="fimfim">Michel Junior</p> 
+          </a>
+        </footer>
+      </div>
+  
+      <div class="col-md-3">
+        <footer class="fotos">
+          <a href="https://www.instagram.com/victor_andrey_/">
+            <img src="Img/andre.jpg" alt="" class="img-fluid rounded" width="100" height="100"> 
+            <p class="fimfim">Andrey</p> 
+          </a>
+        </footer>
+      </div>
+
+     
+
+      <div class="col-md-2">
+        <footer class="fotos">
+          <a href="https://www.instagram.com/kauaa_.s/">
+            <img src="Img/kaua.jpg" alt="" width="100" height="100"> 
+            <p class="fimfim">Kauã</p> 
+          </a>
+        </footer>
+      </div>
+
+
+    </div>
+  </div>
+  
+  <div class="rodape">
+    <div class="contato1">  
+      <div class="meio-contato">
+          
+    </div>
+
+
+  <div class="copyrigth"> 
+    &#169
+    2023 TECH CODE.  Andrey, Wesney, Michel, Kauã e João Lucas
+  </div>
+
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

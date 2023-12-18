@@ -1,0 +1,72 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Usa a fonte Arial ou fonte sans-serif como alternativa */
+    display: flex; /* Utiliza o modelo de layout flexível */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    height: 100vh; /* Define a altura do corpo da página como 100% da altura da viewport */
+    background: linear-gradient(to right, #00cc66, #000000); /* Aplica um degradê de verde para preto no fundo */
+    animation: gradientAnimation 10s linear infinite alternate; /* Adiciona uma animação ao degradê */
+    color: #fff; /* Define a cor do texto como branco */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    margin: 20px; /* Adiciona margem ao redor do corpo da página */
+  }
+  
+  /* Estilo para o contêiner do array */
+  #array-container {
+    display: flex; /* Utiliza o modelo de layout flexível para o contêiner do array */
+    overflow: hidden; /* Esconde qualquer conteúdo excedente */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-bottom: 20px; /* Adiciona margem na parte inferior do contêiner */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+  }
+  
+  /* Estilo para cada item do array */
+  .array-item {
+    padding: 10px; /* Adiciona preenchimento ao redor de cada item do array */
+    border-right: 1px solid rgb(255, 255, 255); /* Adiciona uma borda à direita de cada item */
+    transition: all 0.3s ease-in-out; /* Adiciona uma transição suave a todas as propriedades */
+    background-color: #000000; /* Define a cor de fundo para preto */
+  }
+  
+  /* Estilo para o último item do array, removendo a borda à direita */
+  .array-item:last-child {
+    border-right: none; /* Remove a borda à direita do último item do array */
+  }
+  
+  /* Efeito de destaque ao passar o mouse sobre um item do array */
+  .array-item:hover {
+    background-color: #d9d9d9; /* Altera a cor de fundo ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+  }
+  
+  /* Estilo para a entrada de texto */
+  input {
+    margin-bottom: 10px; /* Adiciona margem na parte inferior da entrada de texto */
+    padding: 8px; /* Adiciona preenchimento à entrada de texto */
+    width: 200px; /* Define a largura da entrada de texto */
+    border: none; /* Remove a borda da entrada de texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-right: 5px; /* Adiciona margem à direita da entrada de texto */
+  }
+  
+  /* Estilo para os botões de adição e exclusão de elementos */
+  #add-btn, #delete-btn {
+    margin-top: 20px; /* Adiciona margem na parte superior dos botões */
+    margin-bottom: 10px; /* Adiciona margem na parte inferior dos botões */
+    padding: 10px; /* Adiciona preenchimento aos botões */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    background-color: #00cc66; /* Define a cor de fundo dos botões como verde */
+    color: #fff; /* Define a cor do texto como branco */
+    border: none; /* Remove a borda dos botões */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos botões */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Adiciona transições suaves às propriedades */
+    margin-right: 5px; /* Adiciona margem à direita dos botões */
+  }
+  
+  /* Efeito de destaque ao passar o mouse sobre os botões */
+  #add-btn:hover, #delete-btn:hover {
+    background-color: #008040; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aplica um efeito de escala ao passar o mouse */
+  }
+  
