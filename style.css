@@ -1,0 +1,70 @@
+/* Seu código CSS existente aqui */
+
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+
+.container.text-c {
+  text-align: center;
+}
+
+.row {
+  padding-top: 30px;
+}
+
+.card {
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.overlay-text {
+  color: rgb(9, 146, 4);
+  padding-top: 120px;
+}
+
+.copyrigth {
+  display: flex;
+  justify-content: center;
+  background-color: #0e0c0c;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  color: var(--color-neutral-30);
+  font-weight: 100;
+}
+
+.fotos img {
+  border: 3px solid #06FFE1;
+  max-width: 100%;
+}
+
+/* Adicionando estilos para os títulos e textos dos cards */
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Ajustando o espaçamento entre os cards */
+.col-md-4 {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,118 @@
+/* Configuração do corpo da página */
+body {
+    /* Imagem de fundo com gradiente e animação */
+    background: url('https://img.freepik.com/fotos-gratis/fundo-preto-abstrato-da-grade-digital_53876-97647.jpg') no-repeat center center fixed;
+    background-size: cover; /* Garante que a imagem de fundo cubra toda a área visível */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    display: flex; /* Usa o modelo de layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente ao centro */
+    height: 100vh; /* Altura igual à altura da janela de visualização */
+    margin: 0; /* Remove as margens padrão do corpo */
+    background: linear-gradient(to right, #00cc66, #000000); /* Gradiente linear de verde para preto */
+    animation: gradientAnimation 10s linear infinite alternate; /* Animação do gradiente */
+    color: #fff; /* Cor do texto */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin: 20px; /* Adiciona margem ao redor do corpo da página */
+}
+
+/* Animação do gradiente linear */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; /* Posição inicial do gradiente */
+    }
+    100% {
+        background-position: 100% 50%; /* Posição final do gradiente */
+    }
+}
+
+/* Estilo do contêiner da lista animada */
+.list-container {
+    display: flex; /* Usa o modelo de layout flexível para o contêiner da lista */
+    flex-direction: column-reverse; /* Inverte a ordem dos itens na lista, para animação invertida */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapassa o contêiner */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-bottom: 20px; /* Adiciona margem na parte inferior do contêiner */
+    justify-content: flex-end; /* Alinha os itens no final do contêiner */
+}
+
+/* Estilo de cada item da lista */
+.list-item {
+    opacity: 0; /* Define a opacidade inicial do item como 0 */
+    transform: translateY(20px); /* Move o item para baixo (oculto) */
+    transition: all 0.5s ease-in-out; /* Adiciona uma transição suave a todas as propriedades */
+}
+
+/* Estilo do item ativo na lista (após adição) */
+.list-item.active {
+    opacity: 1; /* Define a opacidade do item ativo como 1 */
+    transform: translateY(0); /* Move o item para a posição normal */
+}
+
+/* Estilo comum dos itens da lista */
+.list-item {
+    padding: 10px; /* Adiciona preenchimento ao redor de cada item da lista */
+    border-bottom: 1px solid rgb(255, 255, 255); /* Adiciona uma borda inferior aos itens */
+    background-color: #000000; /* Cor de fundo dos itens */
+}
+
+/* Estilo do último item da lista, removendo a borda inferior */
+.list-item:last-child {
+    border-bottom: none; /* Remove a borda inferior do último item da lista */
+}
+
+/* Efeito de destaque ao passar o mouse sobre um item da lista */
+.list-item:hover {
+    background-color: #d9d9d9; /* Altera a cor de fundo ao passar o mouse */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+}
+
+/* Animação de remoção de itens da lista */
+.list-item.removing {
+    animation: fadeOut 0.5s ease-in-out; /* Aplica a animação de desaparecimento */
+}
+
+/* Animação de desaparecimento gradual */
+@keyframes fadeOut {
+    0% {
+        opacity: 1; /* Opacidade inicial */
+        transform: translateY(0); /* Posição inicial */
+    }
+    100% {
+        opacity: 0; /* Opacidade final */
+        transform: translateY(20px); /* Posição final */
+    }
+}
+
+/* Estilo da entrada de texto */
+input {
+    margin-bottom: 10px; /* Adiciona margem na parte inferior da entrada de texto */
+    padding: 8px; /* Adiciona preenchimento à entrada de texto */
+    width: 200px; /* Define a largura da entrada de texto */
+    border: none; /* Remove a borda da entrada de texto */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    margin-right: 5px; /* Adiciona margem à direita da entrada de texto */
+}
+
+/* Estilo dos botões de adição e remoção de elementos */
+#add-btn,
+#delete-btn {
+    margin-top: 20px; /* Adiciona margem na parte superior dos botões */
+    margin-bottom: 10px; /* Adiciona margem na parte inferior dos botões */
+    padding: 10px; /* Adiciona preenchimento aos botões */
+    cursor: pointer; /* Altera o cursor para indicar interatividade */
+    background-color: #00cc66; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    border: none; /* Remove a borda dos botões */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos botões */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Adiciona transições suaves às propriedades */
+    margin-right: 5px; /* Adiciona margem à direita dos botões */
+}
+
+/* Efeito de destaque ao passar o mouse sobre os botões */
+#add-btn:hover,
+#delete-btn:hover {
+    background-color: #008040; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Aplica um efeito de escala ao passar o mouse */
+}

@@ -1,0 +1,79 @@
+/* Definição do estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Escolha da fonte para o texto */
+    display: flex;
+    align-items: center; /* Centralização vertical dos elementos */
+    justify-content: center; /* Centralização horizontal dos elementos */
+    height: 100vh; /* Altura total da viewport */
+    margin: 0; /* Remoção das margens padrão do corpo */
+    background: linear-gradient(to right, #00cc66, #000000); /* Gradiente linear de verde para preto como plano de fundo */
+  }
+  
+  /* Estilo para o container principal da fila */
+  .queue-container {
+    display: flex;
+    align-items: center; /* Centralização vertical dos elementos */
+    justify-content: center; /* Centralização horizontal dos elementos */
+    flex-direction: column; /* Organização dos elementos em coluna */
+    text-align: center; /* Centralização do texto */
+    white-space: nowrap; /* Impede quebra de linha para evitar rolagem horizontal */
+    overflow-x: auto; /* Habilita rolagem horizontal se necessário */
+  }
+  
+  /* Estilo para os elementos individuais na fila */
+  .queue-element {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #333;
+    margin: 0 5px;
+    line-height: 40px;
+    font-size: 16px;
+    background-color: #009ccc; /* Cor de fundo dos elementos da fila */
+  }
+  
+  /* Estilo para o container dos botões */
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Organização dos botões em coluna */
+    align-items: flex-start; /* Alinhamento dos botões à esquerda */
+  }
+  
+  /* Estilo para os botões de manipulação da fila */
+  .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #000; /* Cor de fundo preta para os botões */
+    color: #fff; /* Cor do texto branca nos botões */
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Efeito de transição suave nos botões */
+  }
+  
+  /* Efeito de hover nos botões */
+  .button:hover {
+    background-color: #333; /* Cor de fundo mais escura ao passar o mouse */
+    transform: scale(1.1); /* Efeito de escala para destacar o botão */
+  }
+  
+  /* Estilo para o campo de entrada de novo elemento */
+  .input-element {
+    margin-top: 10px;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  /* Estilo para o container da pilha */
+  #stack-container {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #333; /* Cor de fundo da pilha */
+    border: 2px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil para dar destaque à pilha */
+  }
+  
